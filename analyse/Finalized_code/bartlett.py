@@ -8,10 +8,10 @@ import matplotlib.pyplot as plt
 # ============================================================
 
 FILES = {
-    "master": r"b_door_in\master_0000_data.bin",
-    "slave1": r"b_door_in\slave1_0000_data.bin",
-    "slave2": r"b_door_in\slave2_0000_data.bin",
-    "slave3": r"b_door_in\slave3_0000_data.bin",
+    "master": r"nlos_w_2\master_0000_data.bin",
+    "slave1": r"nlos_w_2\slave1_0000_data.bin",
+    "slave2": r"nlos_w_2\slave2_0000_data.bin",
+    "slave3": r"nlos_w_2\slave3_0000_data.bin",
 }
 
 
@@ -64,7 +64,7 @@ RANGE_MAX_M = 15.2
 ANGLE_MIN_DEG = -90.0
 ANGLE_MAX_DEG = 90.0
 
-NUM_ANGLE_BINS = 361
+NUM_ANGLE_BINS = 361 # 721 #361
 
 
 # ============================================================
@@ -1371,15 +1371,15 @@ def plot_xy_detections(
         "equal"
     )
 
-    plt.xlim(
-        -0,
-        5
-    )
+    # plt.xlim(
+    #     -0,
+    #     5
+    # )
 
-    plt.ylim(
-        -2,
-        2
-    )
+    # plt.ylim(
+    #     -2,
+    #     2
+    # )
 
     plt.grid(
         True,
